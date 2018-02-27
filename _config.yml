@@ -1,0 +1,35 @@
+title: 冬凌君冬个人博客
+description: > # this means to ignore newlines until "baseurl:"
+  记录工作上的点点滴滴
+permalink: ':title/'
+baseurl: "/myblog" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+site-twitter: #if your site has a twitter account, enter it here
+
+# Author Settings
+author: 冬凌君 # add your name
+author-img: avatar.jpg # add your photo
+about-author: 前端开发爱好者 # add description
+social-twitter: # add your Twitter handle
+social-facebook: # add your Facebook handle
+social-github: Zero-Anonymous # add your Github handle
+social-linkedin: # add your Linkedin handle
+social-email: 763690993@qq.com # add your Email address
+
+# Disqus
+discus-identifier: mr-brown # add your discus identifier
+
+# Tracker
+analytics: # Google Analytics
+
+# Build Settings
+markdown: kramdown
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jemoji
+
+paginate: 8
+paginate_path: "/page/:num"
+
+exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
