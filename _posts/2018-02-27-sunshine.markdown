@@ -1,0 +1,8 @@
+---
+layout: post
+title: "我的第一篇博客"
+date: 2018-02-27 15:08:20
+description: 记录如何将我的项目部署到github
+img: mac.jpg  # Add image post (optional)
+---
+测试
