@@ -1,8 +1,51 @@
 ---
 layout: post
-title: "我的第一篇博客"
+title: "mac环境下使用jekyll模版搭建我的个人博客并部署到github"
 date: 2018-02-27 15:08:20
-description: 记录如何将我的项目部署到github
+description: 我的第一篇博客
 img: mac.jpg  # Add image post (optional)
 ---
-测试
+### 第一步：
+打开mac终端安装jekyll：gem install jekyll 
+### 第二步
+在 [http://jekyllthemes.org/](http://jekyllthemes.org/) 找到心仪的模版克隆到本地.
+### 第三步
+在终端cd到模版的项目目录，运行：jekyll serve；测试是否能正常运行
+### 第四步
+开始自定义自己的博客，在模版根目录找到_config.yml文件，根据自己的情况修改配置
+### 第五步
+_posts目录下存放的是博客的文章，在这里开始添加第一篇文章，这里需要用yml格式来给文章作一些说明
+`layout: post`
+`title: "mac环境下使用jekyll模版搭建我的个人博客并部署到github"`
+`date: 2018-02-27 15:08:20`
+`description: 我的第一篇博客`
+添加文章之后就可以将项目部署到github了
+### 第六步
+创建github账号，并新创建一个项目
+### 第七步
+在本地博客项目中创建.ssh文件`mkdir .ssh`,cd到.ssh文件`cd .ssh`,运行`ssh-Keygen -t rsa -C "*****@qq.com"`，之后一直点击确定，直到运行结束，生成id_rsa和id_rsa.pub两个文件
+### 第八步
+运行`pbcopy < ~/.ssh/id_rsa.pub`,拷贝公钥，登录github点击个人头像，选择settings,选择SSH and GPG keys，然后new ssh key。title可以随便填，然后把拷贝的公钥黏贴到key那里
+### 第九步
+运行`ssh -T git@github.com`,连接github
+### 第十步
+`git init`,初始化本地仓库
+`git add *`,添加所有项目
+`git status`,检测状态，绿色表示成功，红色表示有问题
+`git commit -m '备注'`,提交代码到仓库
+`git remote add origin 项目链接`,连接远程仓库并建了一个名叫：origin的别名 后跟：项目链接  
+`git push -u origin master`,将本地仓库的东西提交到地址是origin的地址，master分支下  
+### 第十一步
+在github的博客项目中选择settings开启github的pages功能。
+### 这里记录如何上传本地单独修改的文件
+1. `git status`，检测本地文件
+2. `git add -u`, 添加修改过的文件到索引库
+3. `git status`, 再次检测
+4. `git commit -m "modify"`, 将修改从暂存区提交到本地版本库
+5. `git pull`, 从远程获取最新版本并merge到本地
+6. `git push`, 将本地版本库的分支推送到远程服务器上对应的分支
+
+### 参考
+
+[Mac环境下提交代码到github](http://blog.csdn.net/minjing_lin/article/details/52144927)
+[git上传本地单独修改的文件](http://blog.csdn.net/web_hwg/article/details/72312954)
