@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "mac环境下使用jekyll模版搭建我的个人博客并部署到github"
+title: "mac环境下使用jekyll模版搭建个人博客并部署到github"
 date: 2018-02-27 15:08:20
 description: 我的第一篇博客
 img: mac.jpg  # Add image post (optional)
@@ -10,9 +10,9 @@ img: mac.jpg  # Add image post (optional)
 ### 第二步
 在 [http://jekyllthemes.org/](http://jekyllthemes.org/) 找到心仪的模版克隆到本地.
 ### 第三步
-在终端cd到模版的项目目录，运行：jekyll serve；测试是否能正常运行
+在终端cd到模版的项目目录，运行：`jekyll serve`；测试是否能正常运行
 ### 第四步
-开始自定义自己的博客，在模版根目录找到_config.yml文件，根据自己的情况修改配置
+开始自定义博客，在模版根目录找到_config.yml文件，根据自己的情况修改配置
 ### 第五步
 _posts目录下存放的是博客的文章，在这里开始添加第一篇文章，这里需要用yml格式来给文章作一些说明
 >layout: post  
