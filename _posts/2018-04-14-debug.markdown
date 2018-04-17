@@ -1,0 +1,26 @@
+---
+layout: post
+title: "URLSearchParams在某些安卓机(vivo,oppo,魅族)的微信浏览器中遇到的兼容性问题 "
+date: 2018-04-14 12:31:20
+description: URLSearchParams在某些安卓机(vivo,oppo,魅族)的微信浏览器中遇到的兼容性问题 
+img: workflow.jpg  # Add image post (optional)
+---
+
+###  URLSearchParams在某些安卓机(vivo,oppo,魅族)的微信浏览器中遇到的兼容性问题  
+我在项目中是vue-cli+axios跟后台进行的数据操作，所以在进行post请求的时候用到了URLSearchParams对象：  
+> let params = new URLSearchParams();  
+> params.append("id",id);  
+> _this.$http({
+    method: "post",
+    url: url,
+    data: params,
+}) 
+
+实践发现部分机型出现问题，在有用到该对象的地方均获取不到后台数据,解决方式:  
+> _this.$http({
+    method: "post",
+    url: url,
+    data: {
+        'id': id
+    },
+}) 
