@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "mycat"
+title: "cat"
 date: 2018-04-15 23:15:0
 description: 
-img: myboy_mylove.jpeg  # Add image post (optional)
+img: cat.jpeg  # Add image post (optional)
 ---
 
 ###  领养日期  
@@ -23,6 +23,9 @@ img: myboy_mylove.jpeg  # Add image post (optional)
 
 ### 送养时间  
 2018年4月15日，送养时猫藓未痊愈  
+
+### 到新家第一次洗澡  
+2018年4月16日，
 
 
 
