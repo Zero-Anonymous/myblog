@@ -3,7 +3,7 @@ layout: post
 title: "mycat"
 date: 2018-04-15 23:15:0
 description: 
-img: myboy_mylove.jpg  # Add image post (optional)
+img: myboy_mylove.jpeg  # Add image post (optional)
 ---
 
 ###  领养日期  
